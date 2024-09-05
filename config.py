@@ -1,6 +1,2 @@
-import os
-
-class Config:
-    BLUESKY_USERNAME = os.getenv('victorbrandaao')
-    BLUESKY_PASSWORD = os.getenv('Brandao0510@')
-    POST_INTERVAL_HOURS = 6  # Intervalo de postagem em horas
+client = Client(base_url='https://bsky.social')
+client.login(app.config['VICTORBRANDAAO'], app.config['BRANDAO0510@'])
