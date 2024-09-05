@@ -9,7 +9,7 @@ app.config.from_object(Config)
 
 # Inicializa o cliente Bluesky
 client = Client(base_url='https://bsky.social')
-client.login(app.config['BLUESKY_USERNAME'], app.config['BLUESKY_PASSWORD'])
+client.login(app.config['victorbrandaao.bsky.social], app.config['Brandao0510@'])
 
 
 # Carrega as frases motivacionais
@@ -69,7 +69,7 @@ def scheduled_task():
     check_mentions()
 
 
-scheduler.add_job(scheduled_task, 'interval', minutes=1)
+scheduler.add_job(scheduled_task, 'interval', minutes=30)
 scheduler.start()
 
 if __name__ == '__main__':
